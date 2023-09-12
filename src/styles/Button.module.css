@@ -1,0 +1,31 @@
+.classicBtn{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(to right, #793698, #3f50c2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.classicBtn:hover{
+    filter: brightness(1.6);
+}
+
+.invertBtn{
+    padding: 10px 30px;
+    border: 1px solid #793698;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.invertBtn:hover{
+    filter: brightness(1.6);
+}
