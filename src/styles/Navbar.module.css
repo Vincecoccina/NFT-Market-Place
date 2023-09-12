@@ -34,6 +34,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 15px;
 }
 
@@ -41,23 +42,42 @@
   text-decoration: none;
   color: rgb(123, 123, 123);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 20px;
 }
 .inactiveLink:hover {
-    color: rgb(253, 253, 253);
-  }
-
-.activeLink{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    font-size: 13px;  
+  color: rgb(253, 253, 253);
 }
 
-.containerBtn_Navbar{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.activeLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.containerBtn_Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+.containerMenuItem_NavbarMobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modalItem_NavbarMobile {
+  position: absolute;
+  padding: 50px 20px;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
 }
 
 @media (min-width: 780px) {
@@ -68,9 +88,34 @@
     font-weight: 600;
   }
 
+  .ItemGroup_Navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
   .containerMenuItem_Navbar {
     display: flex;
     align-items: center;
     gap: 15px;
+  }
+
+  .containerMenuItem_NavbarMobile {
+    display: none;
+  }
+
+  .inactiveLink {
+    font-size: 13px;
+  }
+
+  .activeLink {
+    font-size: 13px;
+  }
+
+  .containerBtn_Navbar {
+    margin-top: 0;
+    justify-content: inherit;
   }
 }
