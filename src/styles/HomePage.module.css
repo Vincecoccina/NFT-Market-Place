@@ -1,0 +1,9 @@
+.container_homepage{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.containerBanner_homepage{
+    width: 100%;
+}

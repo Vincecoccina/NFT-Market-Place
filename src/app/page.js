@@ -1,7 +1,14 @@
+import classes from "../styles/HomePage.module.css";
+import Banner from "@/components/Banner";
 
-
-export default function Home() {
+const Home = () => {
   return (
-    <h1>Explore NFTS</h1>
-  )
-}
+    <div className={classes.container_homepage}>
+      <div className={classes.containerBanner_homepage}>
+        <Banner />
+      </div>
+    </div>
+  );
+};
+
+export default Home;
