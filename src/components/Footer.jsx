@@ -24,7 +24,6 @@ const Footer = () => {
               src={logo}
               width={25}
               height={25}
-              objectFit="contain"
               alt="logo"
             />
             <p>NFT Market Place</p>

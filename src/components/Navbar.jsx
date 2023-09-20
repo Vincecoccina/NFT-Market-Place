@@ -64,7 +64,6 @@ const Navbar = () => {
               src={logo}
               width={40}
               height={40}
-              objectFit="contain"
               alt="logo"
             />
             <p>NFT Market Place</p>

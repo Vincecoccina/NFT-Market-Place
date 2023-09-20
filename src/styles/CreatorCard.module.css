@@ -1,0 +1,70 @@
+.container_card {
+  position: relative;
+  width: 220px;
+  height: 240px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  min-width: 220px;
+}
+
+.container_rank {
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #6c3087;
+}
+
+.container_rank p {
+  color: white;
+  font-weight: 700;
+}
+
+.container_image {
+  position: relative;
+}
+
+.container_ItemImage {
+  width: 100%;
+  margin-top: 50px;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_ItemImage img {
+  border-radius: 50%;
+}
+
+.container_tick {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container_infosCreator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container_infosCreator p{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.currency{
+    font-size: 14px; 
+}

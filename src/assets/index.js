@@ -4,7 +4,6 @@ import logo from './logo.png';
 import search from './Search.png';
 import tick from './tick.png';
 import cross from './cross.png';
-import logo02 from './logo02.png';
 import menu from './menu.png';
 import discord from './discord.png';
 import instagram from './instagram.png';
@@ -45,7 +44,6 @@ export default {
   search,
   tick,
   cross,
-  logo02,
   menu,
   discord,
   instagram,
