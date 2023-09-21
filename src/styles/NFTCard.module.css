@@ -1,0 +1,72 @@
+.nft_link{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.nft_link:hover{
+    transform: scale(1.03);
+    filter: brightness(1.2);
+}
+
+.containerCard{
+    background-color: #333;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 215px;
+    
+}
+
+.container_NFTImg{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container_NFTImg img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 10s ease-in-out;
+}
+
+.container_NFTImg img:hover{
+    transform: scale(1.5);
+}
+
+.container_NFTInfos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.NFTName{
+    font-size: 13px;
+    font-weight: 600;
+    color: #adadad;
+}
+
+.container_sellerPrice{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NFTInfos{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media (min-width: 350px) {
+    .nft_link{
+        width: 215px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+}

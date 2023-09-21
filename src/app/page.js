@@ -5,6 +5,7 @@ import Banner from "@/components/Banner";
 import CreatorCard from "@/components/UIElement/CreatorCard";
 import { makeId } from "@/utils/makeId";
 import Image from "next/image";
+import NFTCard from "@/components/UIElement/NFTCard";
 import images from "../assets";
 import classes from "../styles/HomePage.module.css";
 
@@ -46,16 +47,15 @@ const Home = () => {
     } else {
       setHideButton(true);
     }
-    console.log("hello")
+    console.log("hello");
   };
 
   useEffect(() => {
     isScrollable();
-    window.addEventListener('resize', isScrollable);
+    window.addEventListener("resize", isScrollable);
     return () => {
-      window.removeEventListener('resize', isScrollable);
-    }
-
+      window.removeEventListener("resize", isScrollable);
+    };
   });
 
   return (
@@ -94,6 +94,30 @@ const Home = () => {
                 </div>
               </>
             )}
+          </div>
+        </div>
+        {/* HOT BIDS PART */}
+        <div className={classes.container_part}>
+          <div className={classes.container_hotBids}>
+            <h1 className={classes.title_part}>Hot Bids</h1>
+            <div>Search Bar</div>
+          </div>
+          <div className={classes.container_nft}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => {
+              return (
+                <NFTCard
+                  key={`nft-${i}`}
+                  nft={{
+                    i,
+                    name: `Nifty NFT ${i}`,
+                    price: (10 - i * 0.5).toFixed(2),
+                    seller: `0x${makeId(3)}...${makeId(4)}`,
+                    owner: `0x${makeId(3)}...${makeId(4)}`,
+                    description : 'Cool NFT on Sale'
+                  }}
+                />
+              );
+            })}
           </div>
         </div>
       </div>

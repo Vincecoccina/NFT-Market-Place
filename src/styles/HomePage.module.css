@@ -49,6 +49,20 @@
   display: none;
 }
 
+.container_hotBids{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_nft{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+
+}
+
 @media (min-width: 780px) {
   .container_homepage {
     width: 90%;

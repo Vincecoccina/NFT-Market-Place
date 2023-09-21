@@ -51,7 +51,7 @@ const MenuItems = ({ active, setActive, setMobileIsOpen }) => {
 
 const Navbar = () => {
   const [active, setActive] = useState("Explore NFTs");
-  const [hasConnected, setHasConnected] = useState(false);
+  const [hasConnected, setHasConnected] = useState(true);
   const [mobileIsOpen, setMobileIsOpen] = useState(false);
   const router = useRouter();
 
