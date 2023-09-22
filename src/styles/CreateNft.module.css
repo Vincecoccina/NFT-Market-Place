@@ -1,0 +1,62 @@
+.container_createNft {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container_formCreateNft {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.title_part {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.container_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_dropzone {
+  margin-top: 30px;
+}
+
+.dropzone_title {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+
+.container_input {
+  margin-top: 10px;
+}
+
+.inputStyle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border: 2px dashed white;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+.container_itemsInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container_imgForm{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
